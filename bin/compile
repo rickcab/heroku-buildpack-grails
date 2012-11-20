@@ -9,10 +9,49 @@ BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+if [ -z "$SASS_VERSION" ] ; then
+    echo "*** No SASS_VERSION specified.  Defaulting to v3.2.1 ***"
+    SASS_VERSION=3.2.1
+fi
+
+
 # source in common functions
 . $BIN_DIR/common.sh
 
 GRAILS_DIR=".grails"
+
+function indent() {
+  c='s/^/       /'
+  case $(uname) in
+    Darwin) sed -l "$c";;
+    *)      sed -u "$c";;
+  esac
+}
+
+install_yuicompressor() {
+    echo "-----> Installing YUI Compressor 2.4.7..."
+    if [ ! -d "$PWD/.gem/bin" ]; then
+      mkdir -p $PWD/.gem/bin
+    fi
+    
+    curl --silent --location https://github.com/southern-experience/heroku-buildpack-php/raw/master/src/yuicompressor-2.4.7.jar.tar.gz | tar xz
+    export YUI="$PWD/yuicompressor-2.4.7.jar"
+    
+    curl --silent --location https://raw.github.com/southern-experience/heroku-buildpack-php/master/src/yuicompress > $PWD/.gem/bin/yuicompress
+    chmod +x .gem/bin/yuicompress
+    echo "       done."
+}
+
+install_sass() {
+    echo "-----> Installing SASS..."
+    if [ ! -d "$PWD/.gem" ]; then
+      mkdir -p $PWD/.gem
+    fi
+    
+    gem install sass --version "$SASS_VERSION" --no-rdoc --no-ri --install-dir "$PWD/.gem" | indent
+    export GEM_PATH=$GEM_PATH:$PWD/.gem
+    echo "       done."
+}
 
 check_build_status()
 {
@@ -47,22 +86,35 @@ install_grails()
   echo "-----> Done"
 }
 
-if [ ! -f $BUILD_DIR/application.properties ] ; then
-    echo "-----> File not found: application.properties. This file is required. Build failed."
-    echo " !     Failed to build app"
-    exit 1
-fi
-    
-GRAILS_VERSION=$(get_property $BUILD_DIR/application.properties 'app.grails.version')
+
+
+#if [ ! -f $BUILD_DIR/application.properties ] ; then
+#    echo "-----> File not found: application.properties. This file is required. Build failed."
+#    echo " !     Failed to build app"
+#    exit 1
+#fi
+
+#GRAILS_VERSION=$(get_property $BUILD_DIR/application.properties 'app.grails.version')
+
+GRAILS_VERSION=2.1.1
 
 echo "-----> Grails $GRAILS_VERSION app detected"
 echo "       WARNING: The Grails buildpack is currently in Beta."
+if [ ! -z "$BUILDPACK_URL" ] ; then
+    echo "       Using Build Pack: $BUILDPACK_URL"
+fi
+
+
 
 if [ ! -d $CACHE_DIR ] ; then
   mkdir $CACHE_DIR
 fi
 
 cd $CACHE_DIR
+
+# Install stuff we need for CSS and JS assets
+install_sass
+install_yuicompressor
 
 # install grails
 if [ ! -d $GRAILS_DIR ]; then
