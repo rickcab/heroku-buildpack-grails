@@ -53,6 +53,13 @@ install_sass() {
     echo "       done."
 }
 
+build_assets() {
+    # Build assets
+    echo "-----> Compiling assets..."
+    bash build-assets | indent
+    echo "       done."
+}
+
 check_build_status()
 {
   if [ "${PIPESTATUS[*]}" != "0 0" ]; then
@@ -86,17 +93,13 @@ install_grails()
   echo "-----> Done"
 }
 
+if [ ! -f $BUILD_DIR/application.properties ] ; then
+    echo "-----> File not found: application.properties. This file is required. Build failed."
+    echo " !     Failed to build app"
+    exit 1
+fi
 
-
-#if [ ! -f $BUILD_DIR/application.properties ] ; then
-#    echo "-----> File not found: application.properties. This file is required. Build failed."
-#    echo " !     Failed to build app"
-#    exit 1
-#fi
-
-#GRAILS_VERSION=$(get_property $BUILD_DIR/application.properties 'app.grails.version')
-
-GRAILS_VERSION=2.1.1
+GRAILS_VERSION=$(get_property $BUILD_DIR/application.properties 'app.grails.version')
 
 echo "-----> Grails $GRAILS_VERSION app detected"
 echo "       WARNING: The Grails buildpack is currently in Beta."
@@ -104,17 +107,11 @@ if [ ! -z "$BUILDPACK_URL" ] ; then
     echo "       Using Build Pack: $BUILDPACK_URL"
 fi
 
-
-
 if [ ! -d $CACHE_DIR ] ; then
   mkdir $CACHE_DIR
 fi
 
 cd $CACHE_DIR
-
-# Install stuff we need for CSS and JS assets
-install_sass
-install_yuicompressor
 
 # install grails
 if [ ! -d $GRAILS_DIR ]; then
@@ -137,7 +134,13 @@ fi
 export GRAILS_HOME=$CACHE_DIR/$GRAILS_DIR
 export PATH=$GRAILS_HOME/bin:$PATH
 
+# Install stuff we need for CSS and JS assets
+install_sass
+install_yuicompressor
+
 cd $BUILD_DIR
+
+build_assets
 
 # if grails cache directory doesn't exist create it
 if [ ! -d $CACHE_DIR/.grails_cache ]; then
