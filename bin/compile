@@ -197,3 +197,7 @@ if [ ! -d server ] ; then
 fi
 
 
+RELEASE_INFO=`heroku releases --app dev-admin-site | head -n 4`
+send_deploy_notification $APP_NAME "$APP_NAME Deployment" $RELEASE_INFO
+
+
