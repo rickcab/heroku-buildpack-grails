@@ -17,16 +17,18 @@ get_property()
 send_deploy_notification() {
 	PROJECT=$1
 	SUBJECT=$2
-	INFO=$3
+	VERSION=$3
+	INFO=$4
 	
 	URL='https://api.flowdock.com/messages/team_inbox/418e0cc9c040bcdeefcad45c7aa2a034'
 	
-	CONTENT="<html><body><h1>$PROJECT</h1><h3>Built and deployed!</h3>\
+	CONTENT="<html><body><h1>$PROJECT  Version: $VERSION</h1><h3>Built and deployed!</h3>\
 <a href=\\\"http://www.youtube.com/watch?v=vCadcBR95oU\\\">\
 <img src=\\\"http://userserve-ak.last.fm/serve/252/23905581.jpg\\\" alt=\\\"Push It Real Good!\\\"/>\
 </a>\
 <div>\
-<h3>Build Information</h3>\
+<h3>Information</h3>\
+<hr/>\
 $INFO\
 </div>\
 </body></html>"
