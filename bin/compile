@@ -34,15 +34,15 @@ install_yuicompressor() {
     if [ ! -d  "$GEM_BIN" ]; then
       mkdir -p $GEM_BIN
     fi
-    
-    # Add .gem/bin to PATH if not already specified 
+
+    # Add .gem/bin to PATH if not already specified
     if [[ ":$PATH:" != *":$GEM_BIN:"* ]]; then
         export PATH=$GEM_BIN/:$PATH
     fi
-    
+
     curl --silent --location https://github.com/southern-experience/heroku-buildpack-php/raw/master/src/yuicompressor-2.4.7.jar.tar.gz | tar xz
     export YUI="$PWD/yuicompressor-2.4.7.jar"
-    
+
     curl --silent --location https://raw.github.com/southern-experience/heroku-buildpack-php/master/src/yuicompress > $PWD/.gem/bin/yuicompress
     chmod +x .gem/bin/yuicompress
     echo "       done."
@@ -54,7 +54,7 @@ install_sass() {
     if [ ! -d "$GEM_DIR" ]; then
       mkdir -p $GEM_DIR
     fi
-    
+
     gem install sass --version "$SASS_VERSION" --no-rdoc --no-ri --install-dir "$PWD/.gem" | indent
     export GEM_PATH=$GEM_PATH:$GEM_DIR
     echo "       done."
@@ -132,7 +132,7 @@ else
   fi
 fi
 
-# This is a simplisitic way to only set JAVA_HOME when on Cedar. If you run this 
+# This is a simplisitic way to only set JAVA_HOME when on Cedar. If you run this
 # script locally and your jdk is not in this location, you're responsible for
 # setting it yourself. Need to find a smarter way of conditionally setting this var
 if [ -d /usr/lib/jvm/java-6-openjdk ] ; then
@@ -187,7 +187,7 @@ eval "$BUILDCMD" | sed -u 's/^/       /'
 check_build_status
 
 if [ ! -d server ] ; then
-    JETTY_RUNNER_VERSION=7.5.4.v20111024
+    JETTY_RUNNER_VERSION=8.1.9.v20130131
 
     echo "-----> No server directory found. Adding jetty-runner $JETTY_RUNNER_VERSION automatically."
     mkdir server
