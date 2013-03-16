@@ -187,7 +187,7 @@ eval "$BUILDCMD" | sed -u 's/^/       /'
 check_build_status
 
 if [ ! -d server ] ; then
-    JETTY_RUNNER_VERSION=8.1.9.v20130131
+    JETTY_RUNNER_VERSION=7.5.4.v20111024
 
     echo "-----> No server directory found. Adding jetty-runner $JETTY_RUNNER_VERSION automatically."
     mkdir server
