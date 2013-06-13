@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+# Unset as these cause issues with building but we want our
+# other env vars available
+unset JAVA_OPTS
+unset JAVA_TOOL_OPTIONS
+
 # fail fast
 set -e
 
