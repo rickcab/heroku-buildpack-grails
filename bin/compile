@@ -202,9 +202,9 @@ if [ ! -d server ] ; then
 fi
 
 
-APP_NAME=$(get_property $BUILD_DIR/application.properties 'app.name')
-APP_VERSION=$(get_property $BUILD_DIR/application.properties 'app.version')
+GRAILS_APP_NAME=$(get_property $BUILD_DIR/application.properties 'app.name')
+GRAILS_APP_VERSION=$(get_property $BUILD_DIR/application.properties 'app.version')
 
-send_deploy_notification $APP_NAME "$APP_NAME Deployment" $APP_VERSION 'No Additional Information'
+send_deploy_notification $APP_NAME "$GRAILS_APP_NAME Deployment" $GRAILS_APP_VERSION 'No Additional Information'
 
 
