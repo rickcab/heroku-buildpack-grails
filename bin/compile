@@ -83,8 +83,8 @@ check_build_status()
 install_grails()
 {
   VER_TO_INSTALL=$1
-  GRAILS_URL="http://s3.amazonaws.com/heroku-jvm-buildpack-grails/grails-$VER_TO_INSTALL.tar.gz"
-  ##GRAILS_URL="http://s3.amazonaws.com/exp-build-software/grails-$VER_TO_INSTALL.tar.gz"
+  ##GRAILS_URL="http://s3.amazonaws.com/heroku-jvm-buildpack-grails/grails-$VER_TO_INSTALL.tar.gz"
+  GRAILS_URL="http://s3.amazonaws.com/exp-build-software/grails-$VER_TO_INSTALL.tar.gz"
 
   GRAILS_TAR_FILE="grails-heroku.tar.gz"
   echo "-----> Installing Grails $VER_TO_INSTALL....."
