@@ -202,6 +202,8 @@ if [ ! -d server ] ; then
     echo "vendored:$JETTY_RUNNER_VERSION" > $CACHE_DIR/jettyVersion
 fi
 
+echo "-----> Compiling runner"
+$JAVA_HOME/bin/javac -d $BUILD_DIR/server -cp $BUILD_DIR/server/jetty-runner.jar $BIN_DIR/../server/*.java 
 
 GRAILS_APP_NAME=$(get_property $BUILD_DIR/application.properties 'app.name')
 GRAILS_APP_VERSION=$(get_property $BUILD_DIR/application.properties 'app.version')
