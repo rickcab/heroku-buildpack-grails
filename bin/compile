@@ -183,11 +183,13 @@ fi
 # if a populated cache was checked in copy it into the cache
 # remove the checked in cache dir aftewards to save slug size
 
-ls -la
-if [ -d build-pack-ivy-cache ]; then
+BUILD_PACK_IVY_CACHE=$BIN_DIR/../build-pack-ivy-cache
+ls -la $BIN_DIR/../
+ls $BUILD_PACK_IVY_CACHE
+if [ -d $BUILD_PACK_IVY_CACHE ]; then
   echo "-----> Found build-pack-ivy-cache directory in the repo. Using it to prime the cache"
-  cp -r build-pack-ivy-cache $CACHE_DIR/.grails_cache/
-  rm -r build-pack-ivy-cache
+  cp -r $BUILD_PACK_IVY_CACHE $CACHE_DIR/.grails_cache/
+  rm -r $BUILD_PACK_IVY_CACHE
 fi
 
 # create .grails directory in the user home and write a settings.groovy that points grails
