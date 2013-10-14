@@ -183,12 +183,12 @@ fi
 # if a populated cache was checked in copy it into the cache
 # remove the checked in cache dir aftewards to save slug size
 
-# BUILD_PACK_IVY_CACHE=$BIN_DIR/../build-pack-ivy-cache
-# if [ -d $BUILD_PACK_IVY_CACHE ]; then
-#   echo "-----> Found build-pack-ivy-cache directory in the repo. Using it to prime the cache"
-#   cp -r $BUILD_PACK_IVY_CACHE/* $CACHE_DIR/.grails_cache
-#   rm -r $BUILD_PACK_IVY_CACHE
-# fi
+BUILD_PACK_IVY_CACHE=$BIN_DIR/../build-pack-ivy-cache
+if [ -d $BUILD_PACK_IVY_CACHE ]; then
+  echo "-----> Found build-pack-ivy-cache directory in the repo. Using it to prime the cache"
+  cp -r $BUILD_PACK_IVY_CACHE/* $CACHE_DIR/.grails_cache
+  rm -r $BUILD_PACK_IVY_CACHE
+fi
 
 # create .grails directory in the user home and write a settings.groovy that points grails
 # at the correct cache directory
@@ -203,10 +203,10 @@ if [ "$GRAILS_VERSION" != "1.3.7" ] ; then
     BUILDCMD_OPT="-plain-output"
 fi
 
-## COMPILECMD="$GRAILS_CMD -Divy.default.ivy.user.dir=$CACHE_DIR compile --non-interactive"
-## echo "-----> Executing $COMPILECMD"
-## eval "$COMPILECMD" | sed -u 's/^/       /'
-## check_build_status
+COMPILECMD="$GRAILS_CMD -Divy.default.ivy.user.dir=$CACHE_DIR compile --non-interactive"
+echo "-----> Executing $COMPILECMD"
+eval "$COMPILECMD" | sed -u 's/^/       /'
+check_build_status
 
 BUILDCMD="$GRAILS_CMD $BUILDCMD_OPT -Divy.default.ivy.user.dir=$CACHE_DIR war --non-interactive"
 echo "-----> Executing $BUILDCMD"
