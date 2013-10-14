@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>redis</artifactId>
+  <packaging>zip</packaging>
+  <version>1.3.2</version>
+  <name>Redis Plugin</name>
+  <description>The Redis plugin provides integration with a Redis datastore. Redis is a lightning fast 'data structure server'.  The plugin enables a number of memoization techniques to cache results from complex operations in Redis.
+</description>
+  <url>http://grails.org/plugin/redis</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Ted Naleid</name>
+      <email>contact@naleid.com</email>
+    </developer>
+    <developer>
+      <name>Burt Beckwith</name>
+    </developer>
+    <developer>
+      <name>Brian Coles</name>
+    </developer>
+    <developer>
+      <name>Michael Cameron</name>
+    </developer>
+    <developer>
+      <name>Christian Oestreich</name>
+    </developer>
+    <developer>
+      <name>John Engelman</name>
+    </developer>
+    <developer>
+      <name>David Seiler</name>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/grails-plugins/grails-redis/issues</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/grails-plugins/grails-redis</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.1.0</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>xml-apis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>xmlParserAPIs</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xerces</groupId>
+          <artifactId>xmlParserAPIs</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>

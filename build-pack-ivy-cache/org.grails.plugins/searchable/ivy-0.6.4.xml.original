@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>searchable</artifactId>
+  <packaging>zip</packaging>
+  <version>0.6.4</version>
+  <name>Searchable Plugin</name>
+  <description>
+Adds rich search functionality to Grails domain models.
+Built on Compass (http://www.compass-project.org/) and Lucene (http://lucene.apache.org/)
+This version is recommended for JDK 1.5+
+</description>
+  <url>http://grails.org/plugin/searchable</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Maurice Nicholson</name>
+      <email>maurice@freeshell.org</email>
+    </developer>
+    <developer>
+      <name>Peter Ledbrook</name>
+      <email>p.ledbrook@cacoethes.co.uk</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://jira.grails.org/browse/GPSEARCHABLE</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/gpc/grails-searchable</url>
+  </scm>
+  <dependencies />
+</project>

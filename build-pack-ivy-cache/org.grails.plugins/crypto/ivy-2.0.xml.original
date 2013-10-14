@@ -1,0 +1,20 @@
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>crypto</artifactId>
+  <packaging>zip</packaging>
+  <version>2.0</version>
+  <name>Encryption plugin for Grails</name>
+  <description>Masks encryption and decryption functions, currently integrated with Bouncy
+Castle. This version provides classes for PGP and Blowfish, as well as a
+tool for both generating random passwords and salting / verifying salted
+passwords.
+</description>
+  <developers>
+    <developer>
+      <name>Ricardo J. Mendez and Robert Fischer</name>
+      <email>ricardo@arquetipos.co.cr</email>
+    </developer>
+  </developers>
+  <dependencies />
+</project>

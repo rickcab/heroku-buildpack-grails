@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+	<info organisation="org.grails.plugins"
+		module="cache"
+		revision="1.0.0"
+		status="release"
+		publication="20131012103711"
+		default="true"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+		<artifact name="cache" type="zip" ext="zip" conf="default"/>
+	</publications>
+</ivy-module>

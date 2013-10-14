@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>executor</artifactId>
+  <packaging>zip</packaging>
+  <version>0.3</version>
+  <name>Concurrency / asynchronous /background process plugin</name>
+  <description>its all concurrent baby.</description>
+  <url>http://grails.org/plugin/executor</url>
+  <developers>
+        <developer>
+            <name>Joshua Burnett</name>
+            <email>joshua@greenbill.com</email>
+        </developer>
+  </developers>
+  
+</project>                    
+                                

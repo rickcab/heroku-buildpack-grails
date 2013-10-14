@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>postgresql-extensions</artifactId>
+  <packaging>zip</packaging>
+  <version>0.2</version>
+  <name>Grails Postgresql Extensions Plugin</name>
+  <description>This plugin provides support for Postgresql Native Types like Arrays, HStores, JSON,...
+</description>
+  <url>https://github.com/kaleidos/grails-postgresql-extensions/blob/master/README.md</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <organization>
+    <name>Kaleidos</name>
+    <url>http://kaleidos.net</url>
+  </organization>
+  <developers>
+    <developer>
+      <name>Iván López</name>
+      <email>lopez.ivan@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Alonso Torres</name>
+      <email>alonso.javier.torres@gmail.com</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>GITHUB</system>
+    <url>https://github.com/kaleidos/grails-postgresql-extensions/issues</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/kaleidos/grails-postgresql-extensions</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.1-901.jdbc4</version>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>xml-apis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>xmlParserAPIs</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xerces</groupId>
+          <artifactId>xmlParserAPIs</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.grails.plugins</groupId>
+      <artifactId>hibernate</artifactId>
+      <version>2.1.5</version>
+      <type>zip</type>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>xml-apis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>xmlParserAPIs</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xerces</groupId>
+          <artifactId>xmlParserAPIs</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>

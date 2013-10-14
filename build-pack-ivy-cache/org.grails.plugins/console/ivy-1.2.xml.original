@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>console</artifactId>
+  <packaging>zip</packaging>
+  <version>1.2</version>
+  <name>Console Plugin</name>
+  <description>A web-based Groovy console for interactive runtime application management and debugging</description>
+  <url>http://grails.org/plugin/console</url>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Siegfried Puchbauer/Mingfai Ma</name>
+      <email>siegfried.puchbauer@gmail.com / mingfai.ma@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Burt Beckwith</name>
+      <email>burt@burtbeckwith.com</email>
+    </developer>
+  </developers>
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://jira.grails.org/browse/GPCONSOLE</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/burtbeckwith/grails-console</url>
+  </scm>
+  <dependencies />
+</project>

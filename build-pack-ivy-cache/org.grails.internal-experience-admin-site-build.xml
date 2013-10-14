@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.grails.internal"
+		module="experience-admin-site"
+		revision="1.0.9"
+		conf="build"
+		confs="build"
+		date="20131012101941"/>
+	<dependencies>
+		<module organisation="org.grails" name="grails-plugin-tomcat">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="31">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-plugin-tomcat/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-plugin-tomcat" type="jar" ext="jar" status="successful" details="" size="59404" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-plugin-tomcat/jars/grails-plugin-tomcat-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-plugin-tomcat-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jdt.core.compiler" name="ecj">
+			<revision name="3.7.2" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="30">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/ivy-3.7.2.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="3.7.2" rev-constraint-default="3.7.2" rev-constraint-dynamic="3.7.2" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="ecj" type="jar" ext="jar" status="successful" details="" size="1749449" time="5" location="/Users/rcabrera/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.7.2.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.7.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-logging-juli">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="29">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-juli/ivy-7.0.30.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="tomcat-embed-logging-juli" type="jar" ext="jar" status="successful" details="" size="38129" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-juli/jars/tomcat-embed-logging-juli-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-logging-juli/jars/tomcat-embed-logging-juli-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-logging-log4j">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="28">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/ivy-7.0.30.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="tomcat-embed-logging-log4j" type="jar" ext="jar" status="successful" details="" size="83226" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-jasper">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="27">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/ivy-7.0.30.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="tomcat-embed-jasper" type="jar" ext="jar" status="successful" details="" size="788386" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-core">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="26">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/ivy-7.0.30.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="tomcat-embed-core" type="jar" ext="jar" status="successful" details="" size="2578981" time="7" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat" name="tomcat-catalina-ant">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="25">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat/tomcat-catalina-ant/ivy-7.0.30.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="tomcat-catalina-ant" type="jar" ext="jar" status="successful" details="" size="54803" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat/tomcat-catalina-ant/jars/tomcat-catalina-ant-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat/tomcat-catalina-ant/jars/tomcat-catalina-ant-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails.plugins" name="tomcat">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="24">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails.plugins/tomcat/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="tomcat" type="zip" ext="zip" status="successful" details="" size="3767" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.grails.plugins/tomcat/zips/tomcat-2.1.1.zip">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/plugins/tomcat-2.1.1.zip"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-trax">
+			<revision name="1.7.1" status="release" pubdate="20120222141711" resolver="grailsHome" artresolver="grailsHome" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="23">
+				<metadata-artifact status="successful" details="" size="2988" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-trax/ivy-1.7.1.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-trax/ivy-1.7.1.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant-trax/ivy-1.7.1.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="ant-trax" type="jar" ext="jar" status="successful" details="" size="6881" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-trax/jars/ant-trax-1.7.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant-trax/jars/ant-trax-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-junit">
+			<revision name="1.8.2" status="release" pubdate="20120222141712" resolver="grailsHome" artresolver="grailsHome" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="22">
+				<metadata-artifact status="successful" details="" size="2760" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-junit/ivy-1.8.2.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-junit/ivy-1.8.2.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant-junit/ivy-1.8.2.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="ant-junit" type="jar" ext="jar" status="successful" details="" size="102220" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-junit/jars/ant-junit-1.8.2.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant-junit/jars/ant-junit-1.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.8.2" status="release" pubdate="20120502151202" resolver="grailsHome" artresolver="grailsHome" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="20">
+				<metadata-artifact status="successful" details="" size="2740" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant/ivy-1.8.2.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant/ivy-1.8.2.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant/ivy-1.8.2.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="successful" details="" size="1933743" time="4" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant/jars/ant-1.8.2.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant/jars/ant-1.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.8.2" status="release" pubdate="20120502151203" resolver="grailsHome" artresolver="grailsHome" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="21">
+				<metadata-artifact status="successful" details="" size="2423" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-launcher/ivy-1.8.2.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-launcher/ivy-1.8.2.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant-launcher/ivy-1.8.2.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="successful" details="" size="12322" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.8.2.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.ant/ant-launcher/jars/ant-launcher-1.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.10" status="release" pubdate="20120222141704" resolver="grailsHome" artresolver="grailsHome" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="19">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2765" time="2" location="/Users/rcabrera/.grails/ivy-cache/junit/junit/ivy-4.10.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/junit/junit/ivy-4.10.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/junit/junit/ivy-4.10.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="253160" time="2" location="/Users/rcabrera/.grails/ivy-cache/junit/junit/jars/junit-4.10.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/junit/junit/jars/junit-4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.concurrentlinkedhashmap" name="concurrentlinkedhashmap-lru">
+			<revision name="1.2_jdk5" status="release" pubdate="20120222141723" resolver="grailsHome" artresolver="grailsHome" homepage="http://code.google.com/p/concurrentlinkedhashmap" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="18">
+				<license name="Apache" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4059" time="3" location="/Users/rcabrera/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/ivy-1.2_jdk5.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/ivy-1.2_jdk5.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/ivy-1.2_jdk5.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.2_jdk5" rev-constraint-default="1.2_jdk5" rev-constraint-dynamic="1.2_jdk5" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="concurrentlinkedhashmap-lru" type="jar" ext="jar" status="successful" details="" size="54050" time="2" location="/Users/rcabrera/.grails/ivy-cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.2_jdk5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-test">
+			<revision name="3.1.2.RELEASE" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="17">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.springframework/spring-test/ivy-3.1.2.RELEASE.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="3.1.2.RELEASE" rev-constraint-default="3.1.2.RELEASE" rev-constraint-dynamic="3.1.2.RELEASE" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="spring-test" type="jar" ext="jar" status="successful" details="" size="229461" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.springframework/spring-test/jars/spring-test-3.1.2.RELEASE.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.springframework/spring-test/jars/spring-test-3.1.2.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.6.2" status="release" pubdate="20120222141702" resolver="grailsHome" artresolver="grailsHome" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="16">
+				<metadata-artifact status="successful" details="" size="4133" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.slf4j/slf4j-api/ivy-1.6.2.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.slf4j/slf4j-api/ivy-1.6.2.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.slf4j/slf4j-api/ivy-1.6.2.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.6.2" rev-constraint-default="1.6.2" rev-constraint-dynamic="1.6.2" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="25689" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.slf4j/slf4j-api/jars/slf4j-api-1.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails" name="grails-web">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="15">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-web/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-web" type="jar" ext="jar" status="successful" details="" size="801095" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-web/jars/grails-web-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-web-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails" name="grails-resources">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="14">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-resources/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-resources" type="jar" ext="jar" status="successful" details="" size="167094" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-resources/jars/grails-resources-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-resources-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails" name="grails-core">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="13">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-core/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-core" type="jar" ext="jar" status="successful" details="" size="796253" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-core/jars/grails-core-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-core-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails" name="grails-scripts">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="12">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-scripts/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-scripts" type="jar" ext="jar" status="successful" details="" size="1082828" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-scripts/jars/grails-scripts-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-scripts-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails" name="grails-bootstrap">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="11">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-bootstrap/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-bootstrap" type="jar" ext="jar" status="successful" details="" size="724956" time="4" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-bootstrap/jars/grails-bootstrap-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-bootstrap-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails" name="grails-docs">
+			<revision name="2.1.1" status="release" pubdate="20131012101942" resolver="grailsHome" artresolver="grailsHome" downloaded="false" searched="true" default="true" conf="default" position="10">
+				<metadata-artifact status="no" details="" size="0" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-docs/ivy-2.1.1.xml" searched="true"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="grails-docs" type="jar" ext="jar" status="successful" details="" size="288262" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.grails/grails-docs/jars/grails-docs-2.1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/dist/grails-docs-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xalan" name="serializer">
+			<revision name="2.7.1" status="release" pubdate="20120222141719" resolver="grailsHome" artresolver="grailsHome" homepage="http://xml.apache.org/xalan-j/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="9">
+				<metadata-artifact status="successful" details="" size="2735" time="3" location="/Users/rcabrera/.grails/ivy-cache/xalan/serializer/ivy-2.7.1.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/xalan/serializer/ivy-2.7.1.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/xalan/serializer/ivy-2.7.1.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="serializer" type="jar" ext="jar" status="successful" details="" size="278281" time="2" location="/Users/rcabrera/.grails/ivy-cache/xalan/serializer/jars/serializer-2.7.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/xalan/serializer/jars/serializer-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.jansi" name="jansi">
+			<revision name="1.2.1" status="release" pubdate="20120222141701" resolver="grailsHome" artresolver="grailsHome" homepage="http://${forge-project-id}.fusesource.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3388" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.fusesource.jansi/jansi/ivy-1.2.1.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.fusesource.jansi/jansi/ivy-1.2.1.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.fusesource.jansi/jansi/ivy-1.2.1.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="jansi" type="jar" ext="jar" status="successful" details="" size="36877" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.fusesource.jansi/jansi/jars/jansi-1.2.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.fusesource.jansi/jansi/jars/jansi-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jna" name="jna">
+			<revision name="3.2.3" status="release" pubdate="20120222141712" resolver="grailsHome" artresolver="grailsHome" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="8">
+				<metadata-artifact status="successful" details="" size="2295" time="2" location="/Users/rcabrera/.grails/ivy-cache/net.java.dev.jna/jna/ivy-3.2.3.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/net.java.dev.jna/jna/ivy-3.2.3.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/net.java.dev.jna/jna/ivy-3.2.3.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="successful" details="" size="859016" time="2" location="/Users/rcabrera/.grails/ivy-cache/net.java.dev.jna/jna/jars/jna-3.2.3.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/net.java.dev.jna/jna/jars/jna-3.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ivy" name="ivy">
+			<revision name="2.2.0" status="release" pubdate="20120222141709" resolver="grailsHome" artresolver="grailsHome" homepage="http://ant.apache.org/ivy/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="6">
+				<metadata-artifact status="successful" details="" size="4629" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ivy/ivy/ivy-2.2.0.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.apache.ivy/ivy/ivy-2.2.0.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.apache.ivy/ivy/ivy-2.2.0.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="ivy" type="jar" ext="jar" status="successful" details="" size="947592" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ivy/ivy/jars/ivy-2.2.0.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.ivy/ivy/jars/ivy-2.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="1.0" status="release" pubdate="20120222141700" resolver="grailsHome" artresolver="grailsHome" homepage="http://jline.sourceforge.net" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="5">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="2964" time="2" location="/Users/rcabrera/.grails/ivy-cache/jline/jline/ivy-1.0.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/jline/jline/ivy-1.0.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/jline/jline/ivy-1.0.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="successful" details="" size="91183" time="1" location="/Users/rcabrera/.grails/ivy-cache/jline/jline/jars/jline-1.0.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/jline/jline/jars/jline-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcpg-jdk15">
+			<revision name="1.45" status="release" pubdate="20120222141701" resolver="grailsHome" artresolver="grailsHome" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="3">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<license name="Apache Software License, Version 1.1" url="http://www.apache.org/licenses/LICENSE-1.1"/>
+				<metadata-artifact status="successful" details="" size="2856" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.bouncycastle/bcpg-jdk15/ivy-1.45.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.bouncycastle/bcpg-jdk15/ivy-1.45.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.bouncycastle/bcpg-jdk15/ivy-1.45.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.45" rev-constraint-default="1.45" rev-constraint-dynamic="1.45" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="bcpg-jdk15" type="jar" ext="jar" status="successful" details="" size="163975" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.bouncycastle/bcpg-jdk15/jars/bcpg-jdk15-1.45.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.bouncycastle/bcpg-jdk15/jars/bcpg-jdk15-1.45.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcprov-jdk15">
+			<revision name="1.45" status="release" pubdate="20120222141702" resolver="grailsHome" artresolver="grailsHome" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="4">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="successful" details="" size="2535" time="1" location="/Users/rcabrera/.grails/ivy-cache/org.bouncycastle/bcprov-jdk15/ivy-1.45.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.bouncycastle/bcprov-jdk15/ivy-1.45.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.bouncycastle/bcprov-jdk15/ivy-1.45.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.45" rev-constraint-default="1.45" rev-constraint-dynamic="1.45" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="bcprov-jdk15" type="jar" ext="jar" status="successful" details="" size="1663318" time="3" location="/Users/rcabrera/.grails/ivy-cache/org.bouncycastle/bcprov-jdk15/jars/bcprov-jdk15-1.45.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.bouncycastle/bcprov-jdk15/jars/bcprov-jdk15-1.45.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.json-simple" name="json-simple">
+			<revision name="1.1" status="release" pubdate="20120222141704" resolver="grailsHome" artresolver="grailsHome" homepage="http://code.google.com/p/json-simple/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2407" time="2" location="/Users/rcabrera/.grails/ivy-cache/com.googlecode.json-simple/json-simple/ivy-1.1.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/com.googlecode.json-simple/json-simple/ivy-1.1.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/com.googlecode.json-simple/json-simple/ivy-1.1.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="json-simple" type="jar" ext="jar" status="successful" details="" size="16046" time="1" location="/Users/rcabrera/.grails/ivy-cache/com.googlecode.json-simple/json-simple/jars/json-simple-1.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/com.googlecode.json-simple/json-simple/jars/json-simple-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.4.1" status="release" pubdate="20120418124846" resolver="grailsHome" artresolver="grailsHome" homepage="http://code.google.com/p/protobuf" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="1">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="2948" time="2" location="/Users/rcabrera/.grails/ivy-cache/com.google.protobuf/protobuf-java/ivy-2.4.1.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/com.google.protobuf/protobuf-java/ivy-2.4.1.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/com.google.protobuf/protobuf-java/ivy-2.4.1.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="jar" ext="jar" status="successful" details="" size="450279" time="2" location="/Users/rcabrera/.grails/ivy-cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework.uaa" name="org.springframework.uaa.client">
+			<revision name="1.0.1.RELEASE" status="release" pubdate="20120222141709" resolver="grailsHome" artresolver="grailsHome" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="Apache Software License, version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7625" time="17" location="/Users/rcabrera/.grails/ivy-cache/org.springframework.uaa/org.springframework.uaa.client/ivy-1.0.1.RELEASE.xml" searched="true" original-local-location="/Users/rcabrera/.grails/ivy-cache/org.springframework.uaa/org.springframework.uaa.client/ivy-1.0.1.RELEASE.xml.original" origin-is-local="true" origin-location="/Applications/grails/grails-2.1.1/lib/org.springframework.uaa/org.springframework.uaa.client/ivy-1.0.1.RELEASE.xml"/>
+				<caller organisation="org.grails.internal" name="experience-admin-site" conf="default, build" rev="1.0.1.RELEASE" rev-constraint-default="1.0.1.RELEASE" rev-constraint-dynamic="1.0.1.RELEASE" callerrev="1.0.9"/>
+				<artifacts>
+					<artifact name="org.springframework.uaa.client" type="bundle" ext="jar" status="successful" details="" size="117471" time="2" location="/Users/rcabrera/.grails/ivy-cache/org.springframework.uaa/org.springframework.uaa.client/bundles/org.springframework.uaa.client-1.0.1.RELEASE.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.springframework.uaa/org.springframework.uaa.client/jars/org.springframework.uaa.client-1.0.1.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
