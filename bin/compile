@@ -23,13 +23,13 @@ fi
 # source in common functions
 . $BIN_DIR/common.sh
 
-show_time
+date
 
 echo "Get common JVM build pack..."
 curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack-common.tar.gz | tar xz
 . bin/java
 
-show_time
+date
 
 GRAILS_DIR=".grails"
 GRAILS_CMD="grails"
@@ -201,7 +201,7 @@ fi
 
 echo "grails.dependency.cache.dir = '$CACHE_DIR/.grails_cache'" >> $HOME/.grails/settings.groovy
 
-show_time
+date
 
 # build app
 if [ "$GRAILS_VERSION" != "1.3.7" ] ; then
@@ -218,7 +218,7 @@ echo "-----> Executing $BUILDCMD"
 eval "$BUILDCMD" | sed -u 's/^/       /'
 check_build_status
 
-show_time
+date
 
 if [ ! -d server ] ; then
 
@@ -270,4 +270,4 @@ GRAILS_APP_VERSION=$(get_property $BUILD_DIR/application.properties 'app.version
 send_deploy_notification $GRAILS_APP_NAME "$APP_NAME Deployment" $GRAILS_APP_VERSION 'No Additional Information'
 
 
-show_time
+date

@@ -12,11 +12,6 @@ get_property() {
     sed -E -e "s/$escaped_key([\ \t]*=[\ \t]*|[\ \t]+)\"?([A-Za-z0-9\.-]*)\"?.*/\2/g"
 }
 
-show_time() {
-    # Show time
-    date -v1d -v+1m -v-1d -v-fri
-}
-
 send_deploy_notification() {
 	PROJECT=$1
 	SUBJECT=$2
