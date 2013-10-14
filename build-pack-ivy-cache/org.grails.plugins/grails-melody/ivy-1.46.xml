@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.grails.plugins"
+		module="grails-melody"
+		revision="1.46"
+		status="release"
+		publication="20130804091958"
+	>
+		<license name="GNU Lesser General Public License 3" url="http://www.gnu.org/licenses/lgpl.html" />
+		<description homepage="http://grails.org/plugin/grails-melody">
+		Integrate JavaMelody Monitoring into grails application.
+		</description>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="grails-melody" type="zip" ext="zip" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.jrobin" name="jrobin" rev="1.5.9" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="xml-apis" module="xml-apis" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="xml-apis" module="xmlParserAPIs" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="xerces" module="xmlParserAPIs" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.lowagie" name="itext" rev="2.1.7" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="xml-apis" module="xml-apis" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="xml-apis" module="xmlParserAPIs" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="xerces" module="xmlParserAPIs" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="bouncycastle" module="bcmail-jdk14" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="bouncycastle" module="bcprov-jdk14" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="bouncycastle" module="bctsp-jdk14" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="net.bull.javamelody" name="javamelody-core" rev="1.46.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="xml-apis" module="xml-apis" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="xml-apis" module="xmlParserAPIs" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="xerces" module="xmlParserAPIs" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+	</dependencies>
+</ivy-module>

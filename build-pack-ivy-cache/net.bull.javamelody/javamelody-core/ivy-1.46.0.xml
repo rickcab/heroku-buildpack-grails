@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="net.bull.javamelody"
+		module="javamelody-core"
+		revision="1.46.0"
+		status="release"
+		publication="20130805060725"
+	>
+		<license name="LGPL" url="LICENSE" />
+		<description homepage="http://javamelody.googlecode.com/">
+		Monitoring of JavaEE applications
+		</description>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:maven.plugins>null__maven-compiler-plugin__3.1|null__maven-jar-plugin__2.4|null__maven-antrun-plugin__1.7|null__maven-surefire-plugin__2.15|org.codehaus.mojo__cobertura-maven-plugin__2.5.2|null__maven-javadoc-plugin__2.9.1|null__maven-site-plugin__3.3</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="javamelody-core" type="jar" ext="jar" conf="master"/>
+		<artifact name="javamelody-core" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="javamelody-core" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.jrobin" name="jrobin" rev="1.5.9" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.0.1" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="javax.mail" name="mail" rev="1.4.1" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="javax.ejb" name="ejb-api" rev="3.0" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="com.sun.faces" name="jsf-impl" rev="2.1.5" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="javax.el" name="javax.el-api" rev="2.2.1" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="javax.faces" name="javax.faces-api" rev="2.1" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="log4j" name="log4j" rev="1.2.16" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.19" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.lowagie" name="itext" rev="2.1.7" force="true" conf="optional->compile(*),master(*)">
+			<exclude org="bouncycastle" module="bcmail-jdk14" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="bouncycastle" module="bcprov-jdk14" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="bouncycastle" module="bctsp-jdk14" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="net.sf.ehcache" name="ehcache" rev="1.6.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="quartz" name="quartz" rev="1.5.2" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.thoughtworks.xstream" name="xstream" rev="1.4.2" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.apache.tomcat" name="dbcp" rev="6.0.18" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="commons-dbcp" name="commons-dbcp" rev="1.2.2" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.apache.tomcat" name="tomcat-jdbc" rev="7.0.27" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.springframework" name="spring-aop" rev="2.5.6" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.springframework" name="spring-context" rev="2.5.6" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.google.inject" name="guice" rev="2.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.opensymphony" name="xwork" rev="2.1.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.hibernate" name="hibernate-core" rev="3.6.9.Final" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="com.h2database" name="h2" rev="1.3.170" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.easymock" name="easymock" rev="3.1" force="true" conf="test->runtime(*),master(*)"/>
+	</dependencies>
+</ivy-module>

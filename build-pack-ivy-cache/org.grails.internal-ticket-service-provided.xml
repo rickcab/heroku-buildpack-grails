@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.grails.internal"
+		module="ticket-service"
+		revision="1.0.10"
+		conf="provided"
+		confs="provided"
+		date="20131014123454"/>
+	<dependencies>
+		<module organisation="org.grails.plugins" name="webxml">
+			<revision name="1.4.1" status="release" pubdate="20131012103257" resolver="cache" artresolver="cache" downloaded="false" searched="false" default="true" conf="default" position="11">
+				<metadata-artifact status="no" details="" size="408" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails.plugins/webxml/ivy-1.4.1.xml" searched="false" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="org.grails.internal" name="ticket-service" conf="default, provided" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.0.10"/>
+				<artifacts>
+					<artifact name="webxml" type="zip" ext="zip" status="no" details="" size="10699" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails.plugins/webxml/zips/webxml-1.4.1.zip">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/plugins/webxml-1.4.1.zip"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.grails.plugins" name="codenarc">
+			<revision name="0.19" status="release" pubdate="20130721152445" resolver="cache" artresolver="cache" homepage="http://grails.org/plugin/codenarc" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="3">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2871" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails.plugins/codenarc/ivy-0.19.xml" searched="false" origin-is-local="false" origin-location="http://grails.org/plugins/grails-CodeNarc/tags/RELEASE_0_19/CodeNarc-0.19.pom"/>
+				<caller organisation="org.grails.internal" name="ticket-service" conf="default, provided" rev="0.19" rev-constraint-default="0.19" rev-constraint-dynamic="0.19" callerrev="1.0.10"/>
+				<artifacts>
+					<artifact name="codenarc" type="zip" ext="zip" status="no" details="" size="9214" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.grails.plugins/codenarc/zips/codenarc-0.19.zip">
+						<origin-location is-local="false" location="http://grails.org/plugins/grails-codenarc/tags/RELEASE_0_19/grails-codenarc-0.19.zip"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codenarc" name="CodeNarc">
+			<revision name="0.19" status="release" pubdate="20130722040600" resolver="cache" artresolver="cache" homepage="http://codenarc.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4119" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.codenarc/CodeNarc/ivy-0.19.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/org/codenarc/CodeNarc/0.19/CodeNarc-0.19.pom"/>
+				<caller organisation="org.grails.internal" name="ticket-service" conf="default, provided" rev="0.19" rev-constraint-default="0.19" rev-constraint-dynamic="0.19" callerrev="1.0.10"/>
+				<caller organisation="org.grails.plugins" name="codenarc" conf="default, compile, runtime, master" rev="0.19" rev-constraint-default="0.19" rev-constraint-dynamic="0.19" callerrev="0.19"/>
+				<artifacts>
+					<artifact name="CodeNarc" type="jar" ext="jar" status="no" details="" size="4199473" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.codenarc/CodeNarc/jars/CodeNarc-0.19.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/org/codenarc/CodeNarc/0.19/CodeNarc-0.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.8.2" status="release" pubdate="20130424111748" resolver="cache" artresolver="cache" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="10">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2599" time="0" location="/Users/rcabrera/.grails/ivy-cache/junit/junit/ivy-4.8.2.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/junit/junit/4.8.2/junit-4.8.2.pom"/>
+				<caller organisation="org.codenarc" name="CodeNarc" conf="default, compile, runtime, master" rev="4.8.2" rev-constraint-default="4.8.2" rev-constraint-dynamic="4.8.2" callerrev="0.19"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="237344" time="0" location="/Users/rcabrera/.grails/ivy-cache/junit/junit/jars/junit-4.8.2.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/junit/junit/4.8.2/junit-4.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.gmetrics" name="GMetrics">
+			<revision name="0.5" status="release" pubdate="20130424113315" resolver="cache" artresolver="cache" homepage="http://gmetrics.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3993" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.gmetrics/GMetrics/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/org/gmetrics/GMetrics/0.5/GMetrics-0.5.pom"/>
+				<caller organisation="org.codenarc" name="CodeNarc" conf="default, compile, runtime, master" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="0.19"/>
+				<artifacts>
+					<artifact name="GMetrics" type="jar" ext="jar" status="no" details="" size="624184" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.gmetrics/GMetrics/jars/GMetrics-0.5.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/org/gmetrics/GMetrics/0.5/GMetrics-0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.7.1" status="release" pubdate="20130424114301" resolver="cache" artresolver="cache" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="3088" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/org/apache/ant/ant/1.7.1/ant-1.7.1.pom"/>
+				<caller organisation="org.gmetrics" name="GMetrics" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="0.5"/>
+				<caller organisation="org.codenarc" name="CodeNarc" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="0.19"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="1323005" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant/jars/ant-1.7.1.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/org/apache/ant/ant/1.7.1/ant-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.7.1" status="release" pubdate="20130424134710" resolver="cache" artresolver="cache" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<metadata-artifact status="no" details="" size="2423" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-launcher/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom"/>
+				<caller organisation="org.apache.ant" name="ant" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="no" details="" size="12143" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.7.1.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.groovy" name="groovy-all">
+			<revision name="1.7.5" status="release" pubdate="20130425120552" resolver="cache" artresolver="cache" homepage="http://groovy.codehaus.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<metadata-artifact status="no" details="" size="5690" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.codehaus.groovy/groovy-all/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/org/codehaus/groovy/groovy-all/1.7.5/groovy-all-1.7.5.pom"/>
+				<caller organisation="org.gmetrics" name="GMetrics" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.5"/>
+				<caller organisation="org.codenarc" name="CodeNarc" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.19"/>
+				<artifacts>
+					<artifact name="groovy-all" type="jar" ext="jar" status="no" details="" size="5482221" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.7.5.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/org/codehaus/groovy/groovy-all/1.7.5/groovy-all-1.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.13" status="release" pubdate="20130424135304" resolver="cache" artresolver="cache" homepage="http://logging.apache.org/log4j/docs/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="5">
+				<metadata-artifact status="no" details="" size="2326" time="0" location="/Users/rcabrera/.grails/ivy-cache/log4j/log4j/ivy-1.2.13.xml" searched="false" origin-is-local="false" origin-location="http://repo.grails.org/grails/core/log4j/log4j/1.2.13/log4j-1.2.13.pom"/>
+				<caller organisation="org.gmetrics" name="GMetrics" conf="compile, runtime" rev="1.2.13" rev-constraint-default="1.2.13" rev-constraint-dynamic="1.2.13" callerrev="0.5"/>
+				<caller organisation="org.codenarc" name="CodeNarc" conf="default, compile, runtime, master" rev="1.2.13" rev-constraint-default="1.2.13" rev-constraint-dynamic="1.2.13" callerrev="0.19"/>
+				<artifacts>
+					<artifact name="log4j" type="jar" ext="jar" status="no" details="" size="358180" time="0" location="/Users/rcabrera/.grails/ivy-cache/log4j/log4j/jars/log4j-1.2.13.jar">
+						<origin-location is-local="false" location="http://repo.grails.org/grails/core/log4j/log4j/1.2.13/log4j-1.2.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-logging-log4j">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="cache" artresolver="cache" downloaded="false" searched="false" default="true" conf="default" position="2">
+				<metadata-artifact status="no" details="" size="454" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/ivy-7.0.30.xml" searched="false" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="org.grails.internal" name="ticket-service" conf="default, provided" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.10"/>
+				<artifacts>
+					<artifact name="tomcat-embed-logging-log4j" type="jar" ext="jar" status="no" details="" size="83226" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-logging-log4j/jars/tomcat-embed-logging-log4j-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-jasper">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="cache" artresolver="cache" downloaded="false" searched="false" default="true" conf="default" position="1">
+				<metadata-artifact status="no" details="" size="440" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/ivy-7.0.30.xml" searched="false" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="org.grails.internal" name="ticket-service" conf="default, provided" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.10"/>
+				<artifacts>
+					<artifact name="tomcat-embed-jasper" type="jar" ext="jar" status="no" details="" size="788386" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-jasper/jars/tomcat-embed-jasper-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.tomcat.embed" name="tomcat-embed-core">
+			<revision name="7.0.30" status="release" pubdate="20131012101942" resolver="cache" artresolver="cache" downloaded="false" searched="false" default="true" conf="default" position="0">
+				<metadata-artifact status="no" details="" size="436" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/ivy-7.0.30.xml" searched="false" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="org.grails.internal" name="ticket-service" conf="default, provided" rev="7.0.30" rev-constraint-default="7.0.30" rev-constraint-dynamic="7.0.30" callerrev="1.0.10"/>
+				<artifacts>
+					<artifact name="tomcat-embed-core" type="jar" ext="jar" status="no" details="" size="2578981" time="0" location="/Users/rcabrera/.grails/ivy-cache/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.30.jar">
+						<origin-location is-local="true" location="/Applications/grails/grails-2.1.1/lib/org.apache.tomcat.embed/tomcat-embed-core/jars/tomcat-embed-core-7.0.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
