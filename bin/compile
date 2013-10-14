@@ -188,7 +188,7 @@ ls -la $BIN_DIR/../
 ls $BUILD_PACK_IVY_CACHE
 if [ -d $BUILD_PACK_IVY_CACHE ]; then
   echo "-----> Found build-pack-ivy-cache directory in the repo. Using it to prime the cache"
-  cp -r $BUILD_PACK_IVY_CACHE $CACHE_DIR/.grails_cache/ivy-cache
+  cp -r $BUILD_PACK_IVY_CACHE/* $CACHE_DIR/.grails_cache
   rm -r $BUILD_PACK_IVY_CACHE
 fi
 
