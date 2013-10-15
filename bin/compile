@@ -23,8 +23,13 @@ fi
 # source in common functions
 . $BIN_DIR/common.sh
 
+date
+
+echo "Get common JVM build pack..."
 curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack-common.tar.gz | tar xz
 . bin/java
+
+date
 
 GRAILS_DIR=".grails"
 GRAILS_CMD="grails"
@@ -76,16 +81,14 @@ build_assets() {
     echo "       done."
 }
 
-check_build_status()
-{
+check_build_status() {
   if [ "${PIPESTATUS[*]}" != "0 0" ]; then
     echo " !     Failed to build app"
     exit 1
   fi
 }
 
-install_grails()
-{
+install_grails() {
   VER_TO_INSTALL=$1
   GRAILS_URL="http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/grails-$VER_TO_INSTALL.zip"
 
@@ -182,10 +185,12 @@ fi
 # Cache priming option
 # if a populated cache was checked in copy it into the cache
 # remove the checked in cache dir aftewards to save slug size
-if [ -d ivy-cache ]; then
-  echo "-----> Found ivy-cache directory in the repo. Using it to prime the cache"
-  cp -r ivy-cache $CACHE_DIR/.grails_cache/
-  rm -r ivy-cache
+
+BUILD_PACK_IVY_CACHE=$BIN_DIR/../build-pack-ivy-cache
+if [ -d $BUILD_PACK_IVY_CACHE ]; then
+  echo "-----> Found build-pack-ivy-cache directory in the repo. Using it to prime the cache"
+  cp -r $BUILD_PACK_IVY_CACHE/* $CACHE_DIR/.grails_cache
+  rm -r $BUILD_PACK_IVY_CACHE
 fi
 
 # create .grails directory in the user home and write a settings.groovy that points grails
@@ -195,6 +200,8 @@ if [ ! -d $HOME/.grails ]; then
 fi
 
 echo "grails.dependency.cache.dir = '$CACHE_DIR/.grails_cache'" >> $HOME/.grails/settings.groovy
+
+date
 
 # build app
 if [ "$GRAILS_VERSION" != "1.3.7" ] ; then
@@ -210,6 +217,8 @@ BUILDCMD="$GRAILS_CMD $BUILDCMD_OPT -Divy.default.ivy.user.dir=$CACHE_DIR war --
 echo "-----> Executing $BUILDCMD"
 eval "$BUILDCMD" | sed -u 's/^/       /'
 check_build_status
+
+date
 
 if [ ! -d server ] ; then
 
@@ -261,3 +270,4 @@ GRAILS_APP_VERSION=$(get_property $BUILD_DIR/application.properties 'app.version
 send_deploy_notification $GRAILS_APP_NAME "$APP_NAME Deployment" $GRAILS_APP_VERSION 'No Additional Information'
 
 
+date
