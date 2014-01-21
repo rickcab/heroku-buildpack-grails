@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# bin/compile <build-dir> <cache-dir>
+# bin/compile <build-dir> <cache-dir> <env-dir>
 
 # Unset as these cause issues with building but we want our
 # other env vars available
@@ -13,6 +13,7 @@ BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 # parse args
 BUILD_DIR=$1
 CACHE_DIR=$2
+ENV_DIR=$3
 
 if [ -z "$SASS_VERSION" ] ; then
     echo "*** No SASS_VERSION specified.  Defaulting to v3.2.1 ***"
@@ -27,9 +28,11 @@ date
 
 echo "Get common JVM build pack..."
 curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack-common.tar.gz | tar xz
+. bin/util
 . bin/java
 
 date
+export_env_dir $ENV_DIR
 
 GRAILS_DIR=".grails"
 GRAILS_CMD="grails"
